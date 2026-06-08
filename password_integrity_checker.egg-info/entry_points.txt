@@ -1,0 +1,2 @@
+[console_scripts]
+password-check = password_checker.cli:main

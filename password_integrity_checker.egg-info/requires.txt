@@ -1,0 +1,5 @@
+bcrypt
+argon2-cffi
+requests
+zxcvbn
+sqlalchemy

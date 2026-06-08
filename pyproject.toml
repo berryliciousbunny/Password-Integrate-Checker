@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "password-integrity-checker"
+version = "1.0.0"
+description = "Secure password strength, breach detection, and hashing toolkit"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "bcrypt",
+    "argon2-cffi",
+    "requests",
+    "zxcvbn",
+    "sqlalchemy"
+]
+
+[project.scripts]
+password-check = "password_checker.cli:main"
